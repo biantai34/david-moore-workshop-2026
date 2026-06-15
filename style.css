@@ -622,6 +622,47 @@ footer a:hover {
     margin-top: 10px;
 }
 
+/* CTA Banner */
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cta-banner p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(229, 169, 125, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #d19463;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(229, 169, 125, 0.5);
+    color: #fff;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .about-grid {
@@ -670,6 +711,21 @@ footer a:hover {
     }
     .quote-content .chinese-quote {
         font-size: 1.2rem;
+    }
+    .cta-banner {
+        padding: 60px 20px;
+    }
+    .cta-banner h2 {
+        font-size: 2rem;
+    }
+    .cta-banner p {
+        font-size: 1.1rem;
+    }
+    .btn-cta {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
