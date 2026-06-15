@@ -471,4 +471,57 @@ footer a:hover {
     .section {
         padding: 60px 0;
     }
+    .hero-actions {
+        flex-direction: column;
+    }
+}
+
+/* Button & CTA Animations */
+.btn-large {
+    padding: 16px 40px;
+    font-size: 1.15rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--white);
+    transform: translateY(-2px);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    box-shadow: 0 4px 12px rgba(229, 169, 125, 0.4);
+}
+
+.pulse-animation:hover {
+    background-color: #f0bc94;
+    animation: none;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(229, 169, 125, 0.6);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(229, 169, 125, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(229, 169, 125, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(229, 169, 125, 0);
+    }
 }
