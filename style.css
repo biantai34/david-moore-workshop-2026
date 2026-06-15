@@ -444,6 +444,72 @@ footer a:hover {
     transform: translate(0);
 }
 
+/* Workshops Section */
+.workshop-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.workshop-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.workshop-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.workshop-img {
+    flex: 1;
+    position: relative;
+}
+
+.workshop-img img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.workshop-text {
+    flex: 1;
+}
+
+.workshop-text h3 {
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.workshop-text .subtitle {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.workshop-text p {
+    margin-bottom: 16px;
+    color: var(--text-main);
+    font-size: 1.05rem;
+}
+
+.workshop-text ul {
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.workshop-text li {
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .about-grid {
@@ -458,6 +524,10 @@ footer a:hover {
     }
     .discount-section {
         grid-template-columns: 1fr;
+    }
+    .workshop-item, .workshop-item.reverse {
+        flex-direction: column;
+        gap: 30px;
     }
 }
 
