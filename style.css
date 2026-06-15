@@ -492,6 +492,19 @@ footer a:hover {
     color: var(--text-muted);
     font-weight: 400;
     margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.workshop-time {
+    display: inline-block;
+    background-color: var(--bg-light);
+    color: var(--primary-dark);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    border-left: 3px solid var(--accent);
 }
 
 .workshop-text p {
